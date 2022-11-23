@@ -1,0 +1,62 @@
+.section-one {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.section-text {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  margin-top: 65px;
+}
+
+.section-text h2 {
+  margin-bottom: 0px;
+  font-size: 50px;
+}
+
+.section-text h1 {
+  margin-top: 5px;
+  font-size: 90px;
+  width: 100%;
+}
+
+.source-code {
+  height: 54px;
+}
+
+.stage {
+  display: flex;
+  width: 100%;
+  padding-top: 50px;
+}
+.arrow {
+  align-self: flex-end;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  margin: 0 auto 0 auto;
+}
+.bounce-4 {
+  animation-name: bounce-4;
+  animation-timing-function: ease;
+}
+@keyframes bounce-4 {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    transform: scale(1.1, 0.9) translateY(0);
+  }
+  30% {
+    transform: scale(0.9, 1.1) translateY(-100px);
+  }
+  50% {
+    transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
+}
