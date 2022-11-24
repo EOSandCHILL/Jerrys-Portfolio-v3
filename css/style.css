@@ -1,31 +1,36 @@
 .section-one {
   position: relative;
-  text-align: center;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .section-text {
   position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: 100%;
-  margin-top: 65px;
 }
 
-.section-text h2 {
+.hello {
+  position: relative;
   margin-bottom: 0px;
-  font-size: 50px;
+  font-size: 40px;
+  padding-left: 50px;
+  text-align: left;
 }
 
-.section-text h1 {
-  margin-top: 5px;
-  font-size: 90px;
+.description {
+  display: inline-block;
+  position: relative;
+  font-size: 45px;
+  float: right;
+  padding-right: 150px;
+  margin-top: 0px;
+}
+
+.lets {
+  padding-top: 150px;
+  font-size: 70px;
   width: 100%;
-}
-
-.source-code {
-  height: 54px;
+  text-align: center;
+  letter-spacing: 5px;
 }
 
 .stage {
@@ -35,9 +40,10 @@
 }
 .arrow {
   align-self: flex-end;
-  animation-duration: 2s;
+  animation-duration: 2.5s;
   animation-iteration-count: infinite;
   margin: 0 auto 0 auto;
+  padding-top: 150px;
 }
 .bounce-4 {
   animation-name: bounce-4;
@@ -51,12 +57,55 @@
     transform: scale(1.1, 0.9) translateY(0);
   }
   30% {
-    transform: scale(0.9, 1.1) translateY(-100px);
+    transform: scale(0.9, 1.1) translateY(-200px);
   }
   50% {
     transform: scale(1, 1) translateY(0);
   }
   100% {
     transform: scale(1, 1) translateY(0);
+  }
+}
+
+.description h3 {
+  height: 60px;
+  float: left;
+  margin-right: 0.3em;
+  margin-top: -2px;
+}
+
+b {
+  float: right;
+  overflow: hidden;
+  position: relative;
+  height: 51px;
+}
+span1 {
+  display: inline-block;
+  color: #fff;
+  position: relative;
+  white-space: nowrap;
+  top: 0;
+  left: 0;
+  -webkit-animation: move 7s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-delay: 1s;
+}
+
+@keyframes move {
+  0% {
+    top: 0px;
+  }
+  20% {
+    top: -50px;
+  }
+  40% {
+    top: -100px;
+  }
+  60% {
+    top: -150px;
+  }
+  80% {
+    top: -200px;
   }
 }
