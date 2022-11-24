@@ -2,27 +2,32 @@ body {
   margin: 0;
   /* to see that the navbar is sticky */
   height: 200vh;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    0deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(9, 9, 121, 1) 50%,
-    rgba(0, 104, 255, 1) 100%
-  );
+  background: rgb(40, 40, 40);
 }
 
 /* .logo-container {
   font: bold 22px sans-serif;
 } */
 
-a {
+.source-code {
+  height: 54px;
+  padding-left: 10px;
+}
+
+.menu-item a {
   color: black;
   text-decoration: none;
   font: bold 22px sans-serif;
+  transition: 0.5s ease;
 }
 
-a:hover {
-  color: darkcyan;
+.menu-item a:hover {
+  color: rgb(1, 123, 123);
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+  transition: 0.5s ease;
+  font: bold 30px sans-serif;
 }
 
 .navbar {
@@ -34,12 +39,13 @@ a:hover {
   z-index: 99;
   /* set background */
   background-color: white;
-  padding: 10px;
+  padding: 7px;
 
   /* define flex */
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: solid black 1px;
 }
 
 .nav-menu {
@@ -55,6 +61,7 @@ a:hover {
   margin-left: 20px;
   margin-right: 5px;
 }
+
 .bar {
   width: 20px;
   height: 3px;
